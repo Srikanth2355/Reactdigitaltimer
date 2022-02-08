@@ -1,0 +1,188 @@
+/* Write your CSS here */
+.container {
+  background: linear-gradient(to left, #cffcf1 80%, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.heading {
+  text-align: center;
+  color: #0f172a;
+}
+.timercontrolcontainer {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.backgroundimgcontainer {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 500px;
+  max-width: 1100px;
+}
+.whitebgcontainer {
+  width: 150px;
+  height: 150px;
+  background-color: #ffffff;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.counter {
+  margin: 0px;
+  color: #00d9f5;
+}
+.counterpara {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.controlscontainer {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.startresetcontaienr {
+  display: flex;
+  flex-direction: row;
+}
+.startcontainer,
+.resetcontainer {
+  display: flex;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.startpauseimg,
+.resetimg {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+.startpausepara,
+.resetpara {
+  /* font-size: 20px; */
+  font-weight: 700;
+}
+.addminutescontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.settimepara {
+  font-size: 16px;
+  text-align: center;
+  margin: 0px;
+}
+.plusminuscontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.minuspara,
+.pluspara {
+  font-size: 30px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.minutesdiv {
+  width: 80px;
+  height: 50px;
+  padding: 5px;
+  background-color: #00d9f5;
+  /* background: linear-gradient(to right, #cffcf1 10%, #00d9f5); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0f172a;
+  border-radius: 5px;
+}
+.minutespara {
+  font-size: 20px;
+  font-weight: 800;
+}
+@media screen and (max-width: 575px) {
+  .timercontrolcontainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .backgroundimgcontainer {
+    width: 300px;
+    height: 250px;
+  }
+  .controlscontainer {
+    width: 200px;
+  }
+  .whitebgcontainer {
+    width: 70px;
+    height: 70px;
+  }
+  .counter {
+    font-size: 16px;
+  }
+  .counterpara {
+    font-size: 14px;
+  }
+  .startpauseimg,
+  .resetimg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .backgroundimgcontainer {
+    width: 300px;
+    height: 250px;
+  }
+  .whitebgcontainer {
+    width: 90px;
+    height: 90px;
+  }
+
+  .counter {
+    font-size: 18px;
+  }
+  .counterpara {
+    font-size: 16px;
+  }
+  .startpauseimg,
+  .resetimg {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .backgroundimgcontainer {
+    width: 400px;
+    height: 350px;
+  }
+  .whitebgcontainer {
+    width: 110px;
+    height: 110px;
+  }
+  .counter {
+    font-size: 20px;
+  }
+  .counterpara {
+    font-size: 18px;
+  }
+}
